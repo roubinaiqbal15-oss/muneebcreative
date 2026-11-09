@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101014">
+<meta name="description" content="Muneeb Creatives — AI Content Creator & Graphic Designer. Brand identity, social media design and AI content creation.">
+<title>Muneeb Creatives | AI Content Creator & Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101014;--panel:#1a1820;--ink:#f8f6fb;--muted:#bcb7c5;--purple:#d34bff;--line:rgba(255,255,255,.12);--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:9;background:rgba(16,16,20,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font:800 18px Manrope;letter-spacing:.08em}.logo b{color:var(--purple)}
+nav{display:flex;gap:26px;color:var(--muted);font-size:13px}nav a:hover{color:var(--purple)}.menu{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:8px;padding:9px}
+.hero{position:relative;overflow:hidden;padding:100px 0 85px}.hero:before{content:"";position:absolute;inset:-180px -100px auto auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(211,75,255,.2),transparent 67%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:65px;position:relative}
+.kicker{color:var(--purple);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12}h1{font-size:clamp(45px,7vw,82px);letter-spacing:-.06em;margin:18px 0}h1 span,.accent{color:var(--purple)}
+.role{font-weight:700;color:#ded6e7;font-size:14px;letter-spacing:.08em;text-transform:uppercase}.lead{color:var(--muted);font-size:17px;max-width:600px;margin:23px 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;padding:13px 19px;border-radius:8px;font-size:13px;font-weight:700;border:1px solid var(--line);transition:.2s}.btn.primary{background:var(--purple);color:#160d1a;border-color:var(--purple)}.btn:hover{transform:translateY(-2px)}
+.photo-frame{width:min(100%,390px);justify-self:center;position:relative}.photo-frame:after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--purple);border-radius:20px;z-index:-1}
+.photo{display:block;width:100%;height:480px;object-fit:cover;object-position:center 22%;border-radius:18px;border:1px solid var(--line);box-shadow:0 25px 80px #0008}
+.photo-label{position:absolute;bottom:17px;left:-20px;background:#211b28;border:1px solid #684177;padding:12px 16px;border-radius:9px;font-size:12px;font-weight:700}
+section{padding:78px 0;border-top:1px solid var(--line)}.section-head{max-width:670px;margin-bottom:32px}.section-head h2{font-size:clamp(30px,4vw,44px);margin:12px 0}.section-head p{color:var(--muted);margin:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:linear-gradient(145deg,#211e27,#17151c);border:1px solid var(--line);border-radius:15px;padding:25px}.card h3{font-size:18px;margin:0 0 12px}.card p{color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:13px}.service .num{color:var(--purple);font-weight:800;font-size:12px}.service h3{font-size:16px;margin:10px 0}.service p{color:var(--muted);font-size:13px;margin:0}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:.2s}.project:hover{transform:translateY(-4px);border-color:#9d42b8}.project img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}.project-info{padding:15px}.project-info small{color:var(--purple);font-size:10px;font-weight:700;letter-spacing:.12em}.project-info h3{font-size:15px;margin:6px 0 4px}.project-info p{color:var(--muted);font-size:12px;margin:0}
+.social-preview{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}.social-preview img{width:100%;border-radius:14px;border:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.contact-item{background:var(--panel);border:1px solid var(--line);padding:17px;border-radius:10px;overflow-wrap:anywhere}.contact-item small{display:block;color:var(--purple);font-size:10px;letter-spacing:.13em;font-weight:700}.contact-item strong{font-size:14px}
+footer{padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:45px}.photo-frame{width:min(78%,350px)}.photo{height:430px}.grid2,.social-preview{grid-template-columns:1fr}.services,.projects{grid-template-columns:repeat(2,1fr)}nav{display:none;position:absolute;top:76px;left:0;right:0;background:#101014;padding:20px 24px;border-bottom:1px solid var(--line);flex-direction:column}nav.open{display:flex}.menu{display:block}}
+@media(max-width:520px){.wrap{width:calc(100% - 32px)}.hero{padding:62px 0}.lead{font-size:15px}section{padding:58px 0}.services,.projects,.contact-grid{grid-template-columns:1fr}.photo{height:390px}.card{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#home">MUNEEB <b>CREATIVES.</b></a><button class="menu" id="menu" aria-expanded="false">Menu</button><nav id="nav"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid"><div><div class="kicker">Creative portfolio · 2026</div><h1>Ideas into<br><span>visual impact.</span></h1><div class="role">AI Content Creator &amp; Graphic Designer</div><p class="lead">I'm Muneeb Sultan, a graphic designer with 4+ years of experience helping businesses communicate with clarity, confidence and creativity.</p><div class="buttons"><a class="btn primary" href="Muneeb_Creatives_Redesigned_Portfolio.pdf" download>Download Portfolio ↓</a><a class="btn" href="#contact">Book a 1:1 call ↗</a></div></div><div class="photo-frame"><img class="photo" src="assets/muneeb-sultan.jpg" alt="Muneeb Sultan portrait"><div class="photo-label">MUNEEB CREATIVES · DESIGN &amp; AI</div></div></div></section>
+<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">01 / About</div><h2>Design that works<br><span class="accent">for your brand.</span></h2><p>I combine clear visual thinking with hands-on creative execution to help businesses build recognition and communicate their value.</p></div><div class="grid2"><article class="card"><h3>What I create</h3><p>Brand identities and logos that make lasting first impressions; social media content that stops the scroll; packaging design that stands out; and digital ads designed to support clicks and conversions.</p></article><article class="card"><h3>What I bring</h3><p>Clean, strategic design; detail-oriented execution from concept to final file; and creative solutions focused on real communication needs rather than decoration alone.</p></article></div></div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="kicker">02 / Capabilities</div><h2>Creative services</h2><p>Design and content services for brands, businesses and digital platforms.</p></div><div class="services">
+<div class="service"><span class="num">01</span><h3>AI Content Creation</h3><p>AI visuals, video concepts and digital storytelling content.</p></div>
+<div class="service"><span class="num">02</span><h3>Logo &amp; Brand Identity</h3><p>Distinctive logos and cohesive visual identity systems.</p></div>
+<div class="service"><span class="num">03</span><h3>Graphic Design</h3><p>Flyers, brochures, books, layouts and promotional artwork.</p></div>
+<div class="service"><span class="num">04</span><h3>Social Media Design</h3><p>Campaign creatives and platform-ready branded content.</p></div>
+<div class="service"><span class="num">05</span><h3>Company Profiles</h3><p>Professional profiles that present services and value clearly.</p></div>
+<div class="service"><span class="num">06</span><h3>Mobile App Concepts</h3><p>Clean interface screens and user-focused visual concepts.</p></div>
+</div></div></section>
+<section id="work"><div class="wrap"><div class="section-head"><div class="kicker">03 / Selected work</div><h2>Projects &amp; <span class="accent">visual stories.</span></h2><p>A selection of projects from the supplied Muneeb Creatives portfolio. Select any project to view its original portfolio artwork.</p></div>
+
+
+<div class="card" style="margin:0 0 22px;border-color:rgba(211,75,255,.45)">
+  <div class="grid2" style="align-items:center">
+    <div>
+      <div class="kicker">Featured client projects</div>
+      <h3 style="font-size:25px;margin:9px 0">Upscale Real Estate — Dubai, UAE</h3>
+      <p>Brand identity and marketing design for a Dubai real estate brokerage, including logo design, company-profile layouts, social media post designs and promotional campaign artwork.</p>
+      <p style="margin-top:14px"><strong>Deliverables:</strong> Logo design · Social media creatives · Company profile design · Property campaign graphics · Brand presentation</p>
+      <p style="margin-top:14px"><strong>Brand direction:</strong> Premium black-and-gold identity with elegant typography and luxury property imagery.</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;background:#111;border-radius:12px;padding:14px;min-height:180px">
+      <img src="assets/upscale-real-estate-logo.jpg" alt="Upscale Real Estate logo" style="max-width:100%;max-height:190px;object-fit:contain">
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:16px;gap:12px">
+    <img src="assets/upscale-real-estate-profile-designs.png" alt="Upscale Real Estate company profile pages" style="width:100%;border-radius:10px">
+    <img src="assets/upscale-real-estate-social-posts.png" alt="Upscale Real Estate social media post designs" style="width:100%;border-radius:10px">
+  </div>
+</div>
+<div class="card" style="margin:0 0 22px;border-color:rgba(211,75,255,.45)">
+  <div class="grid2" style="align-items:center">
+    <div>
+      <div class="kicker">Featured client projects</div>
+      <h3 style="font-size:25px;margin:9px 0">Upscale Travel &amp; Fleet — Pakistan</h3>
+      <p>Branding and travel marketing design for a Pakistan-based travel and fleet business, promoting destination experiences and travel-related services.</p>
+      <p style="margin-top:14px"><strong>Deliverables:</strong> Logo design · Social media post designs · Profile and cover artwork · Baku destination promotions · Outdoor billboard and poster concepts</p>
+      <p style="margin-top:14px"><strong>Brand direction:</strong> Professional navy, gold and white travel identity with destination-led imagery.</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;padding:14px;min-height:180px">
+      <img src="assets/upscale-travel-fleet-logo.png" alt="Upscale Travel and Fleet logo" style="max-width:100%;max-height:190px;object-fit:contain">
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:16px;gap:12px">
+    <img src="assets/upscale-travel-baku-poster.png" alt="Upscale Travel and Fleet Baku poster" style="width:100%;border-radius:10px">
+    <img src="assets/upscale-travel-baku-billboard.png" alt="Upscale Travel and Fleet Baku billboard mockup" style="width:100%;border-radius:10px">
+  </div>
+</div>
+
+<div class="card" style="margin:0 0 22px;border-color:rgba(211,75,255,.45)">
+  <div class="grid2" style="align-items:center">
+    <div>
+      <div class="kicker">Featured client project</div>
+      <h3 style="font-size:25px;margin:9px 0">Friends Automotive — Canberra</h3>
+      <p>Automotive brand identity and social media design for a Canberra-based vehicle service and repair business. The creative collection promotes general servicing, repairs, engine maintenance, diagnostics, oil changes, tyre services and customer care.</p>
+      <p style="margin-top:14px"><strong>Deliverables:</strong> Logo design · Social media post designs · Service promotions · Automotive campaign creative · Story-format design</p>
+      <p style="margin-top:14px"><strong>Brand direction:</strong> Strong red, black and white palette with automotive imagery and clear service-led messaging.</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;padding:14px;min-height:180px">
+      <img src="assets/friends-automotive-logo-crop.jpg" alt="Friends Automotive logo artwork" style="max-width:100%;max-height:190px;object-fit:contain">
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:16px;gap:12px">
+    <img src="assets/friends-automotive-post-01.jpg" alt="Friends Automotive driving comfort promotional design" style="width:100%;border-radius:10px">
+    <img src="assets/friends-automotive-post-02.jpg" alt="Friends Automotive Canberra service promotion" style="width:100%;border-radius:10px">
+  </div>
+</div>
+
+<div class="card" style="margin:0 0 22px;border-color:rgba(211,75,255,.45)">
+  <div class="grid2" style="align-items:center">
+    <div>
+      <div class="kicker">Featured client project</div>
+      <h3 style="font-size:25px;margin:9px 0">ShopiVopi</h3>
+      <p>Logo design and social media post designs for an online retail brand. The creative set features promotional banners and product-focused advertisements for watches, smartwatches, wireless earbuds and accessories.</p>
+      <p style="margin-top:14px"><strong>Deliverables:</strong> Brand logo · Product advertisements · Promotional social creatives · Campaign banner</p>
+      <p style="margin-top:14px"><a class="btn primary" href="https://www.facebook.com/share/1CSpAUgo9B/" target="_blank" rel="noopener">View Facebook Page ↗</a></p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;background:#050505;border-radius:12px;padding:14px;min-height:180px">
+      <img src="assets/shopivopi-logo.png" alt="ShopiVopi logo" style="max-width:100%;max-height:190px;object-fit:contain">
+    </div>
+  </div>
+</div>
+<div class="projects" id="projectGrid"></div></div></section>
+<section><div class="wrap social-preview"><div><div class="kicker">04 / Social presence</div><h2>Find Muneeb<br><span class="accent">Creatives online.</span></h2><p style="color:var(--muted)">The portfolio includes channel previews for YouTube, Facebook, Instagram and TikTok. Direct profile URLs were not included in the supplied document.</p></div><img src="assets/portfolio-page-15.jpg" alt="Muneeb Creatives social media account previews"></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="kicker">05 / Contact</div><h2>Let's make something<br><span class="accent">memorable.</span></h2><p>For project enquiries, collaborations and a 1:1 call, reach out using the details below.</p></div><div class="contact-grid"><div class="contact-item"><small>PHONE / WHATSAPP</small><strong><a href="tel:+923016779982">+92 301 6779982</a></strong></div><div class="contact-item"><small>EMAIL</small><strong><a href="mailto:malikmuneebawan535@gmail.com">malikmuneebawan535@gmail.com</a></strong></div><div class="contact-item"><small>LOCATION</small><strong>Sargodha, Punjab, Pakistan</strong></div><div class="contact-item"><small>PORTFOLIO BRAND</small><strong>Muneeb Creatives</strong></div></div></div></section>
+</main><footer><div class="wrap foot"><span>© <span id="year"></span> Muneeb Creatives. All rights reserved.</span><span>AI Content Creator &amp; Graphic Designer</span></div></footer>
+<script>
+const projects=[
+["Logo Design","Upscale Real Estate Logo — Dubai","upscale-real-estate-logo.jpg","Brand Identity"],
+["Company Profile Design","Upscale Real Estate — Profile Pages","upscale-real-estate-profile-designs.png","Real Estate"],
+["Company Profile Design","Upscale Real Estate — Company Profile","upscale-real-estate-company-profile.png","Real Estate"],
+["Social Media Design","Upscale Real Estate — Social Post Collection","upscale-real-estate-social-posts.png","Real Estate"],
+["Social Media Campaign","Upscale Real Estate — Property Campaigns","upscale-real-estate-campaign-collage.jpg","Real Estate"],
+["Logo Design","Upscale Travel & Fleet Logo","upscale-travel-fleet-logo.png","Brand Identity"],
+["Social Media Design","Upscale Travel & Fleet — Baku Promotions","upscale-travel-social-mockup.png","Travel"],
+["Promotional Poster","Upscale Travel & Fleet — Baku Destination","upscale-travel-baku-poster.png","Travel"],
+["Outdoor Advertising","Upscale Travel & Fleet — Baku Billboard","upscale-travel-baku-billboard.png","Travel"],
+
+["Logo Design","Friends Automotive Logo Artwork","friends-automotive-logo-crop.jpg","Brand Identity"],
+["Social Media Design","Friends Automotive — Service Promotion","friends-automotive-post-01.jpg","Automotive"],
+["Social Media Design","Friends Automotive — Canberra","friends-automotive-post-02.jpg","Automotive"],
+["Social Media Design","Friends Automotive — Repair Services","friends-automotive-post-03.png","Automotive"],
+["Social Media Design","Friends Automotive — Vehicle Maintenance","friends-automotive-post-04.jpg","Automotive"],
+["Social Media Design","Friends Automotive — Customer Satisfaction","friends-automotive-post-05.jpg","Automotive"],
+["Social Media Design","Friends Automotive — Auto Repair","friends-automotive-post-06.jpg","Automotive"],
+["Social Media Design","Friends Automotive — Tyre Service","friends-automotive-post-07.jpg","Automotive"],
+["Story Design","Friends Automotive — Service Story","friends-automotive-story-01.jpg","Automotive"],
+["Brand Signage Reference","Friends Automotive — Storefront Signage","friends-automotive-signage-reference.png","Branding"],
+["Social Media Design","Upscale Travel & Fleet","portfolio-page-04.jpg","Travel"],
+["Social Media Design","Organic Shampoo","portfolio-page-06.jpg","Beauty"],
+["Logo Design","ShopiVopi Brand Logo","shopivopi-logo.png","Brand Identity"],
+["Social Media Design","ShopiVopi Product Collage","shopivopi-product-collage.jpg","Retail Campaign"],
+["Promotional Banner","ShopiVopi Brand Banner","shopivopi-banner.jpg","Campaign"],
+["Product Advertisement","Wiwo Bird Wireless Earbuds","shopivopi-creative-01.jpg","Electronics"],
+["Product Advertisement","Stereo TWS Earbuds","shopivopi-creative-02.jpg","Electronics"],
+["Product Advertisement","Smartwatch Promotion","shopivopi-creative-03.jpg","Wearables"],
+["Product Showcase","Couple Watches","shopivopi-creative-04.jpg","Watches"],
+["Product Advertisement","Men's Watch Promotion","shopivopi-creative-05.jpg","Watches"],
+["Product Showcase","Luxury Watch Pair","shopivopi-creative-06.jpg","Watches"],
+["Product Advertisement","Black Watch Campaign","shopivopi-creative-07.jpg","Watches"],
+["Social Media Design","Smart Spice Bar — Food","portfolio-page-08.jpg","Food"],
+["Social Media Design","Smart Juice Bar","portfolio-page-09.jpg","Beverages"],
+["Company Profile","Upscale Travel & Fleet","portfolio-page-10.jpg","Corporate"],
+["Book Cover Design","Book & Publication Covers","portfolio-page-11.jpg","Publishing"],
+["Mobile App Design","Belize App Concept","portfolio-page-12.jpg","UI Concept"],
+["Company Branding","Smart Food’s","portfolio-page-13.jpg","Branding"],
+["Company Branding","Boot Camp English","portfolio-page-14.jpg","Branding"]
+];
+const grid=document.getElementById("projectGrid");
+projects.forEach((p,i)=>{const a=document.createElement("a");a.className="project";a.href="assets/"+p[2];a.target="_blank";a.rel="noopener";a.innerHTML=`<img src="assets/${p[2]}" alt="${p[1]} project artwork"><div class="project-info"><small>${p[0]}</small><h3>${p[1]}</h3><p>${p[3]} · View project artwork ↗</p></div>`;grid.appendChild(a)});
+const menu=document.getElementById("menu"),nav=document.getElementById("nav");menu.addEventListener("click",()=>{let open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open))});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
